@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* PROFILE CONTAINER */
+[data-testid='test-profile-card'] {
+  /* border: 2px solid black; */
+  min-width: 100%;
+  height: 100vh;
+  background: #F9F9FB;
+}
+/* DIV FOR THE IMG AND HEADER */
+.imageName-conatiner1{
+    /* border: 2px solid red; */
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.image-name-container {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  max-width: 90%;
+  min-width: 90%;
+  /* margin: 0 auto; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  background-color:#5E4B8B;
+  border-radius: 20px;
+}
+/* CHILD DIVS */
+.imgName-div {
+  /* border: 2px solid black; */
+  width: 100%;
+}
+/* image-container */
+.image-container {
+  width: 150px;
+  height: 150px;
+  /* border-radius: 50%; */
+}
+.user-image{
+    border: 5px solid white;
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+ /* FOR HEADER */
+.name-container {
+  width: 75%;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  color: white;
+}
+
+.name-container h2 {
+  /* border: 2px solid blue; */
+  /* font-size: 1rem; */
+  min-width: 60%;
+  text-align: center;
+}
+
+.user-name {
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+   font-weight: 800;
+  /* background-color: #4C3A78; */
+}
+
+.user-job {
+  font-weight: 200;
+  font-size: 1rem;
+  color:#D0C9E3;
+  margin-bottom: 5px;
+  
+}
+
+
+
+/* DIV CONATINER FOR BIO, HOBBY AND DISLIKES */
+.bio-hb-container {
+  /* border: 2px solid red; */
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* DIV FOR BIO */
+.bio-container {
+  /* border: 2px solid black; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-testid='test-user-bio'] {
+  /* border: 2px solid red; */
+  width: 90%;
+  /* height: 90px; */
+  text-align: center;
+  color: #333;
+}
+
+/* DIV CONTAINER FOR HOBBY AND DISLIKE */
+.hobbies-dislike-container {
+  /* border: 2px solid blue; */
+  max-width: 100%;
+  min-width: 95%;
+  height: auto;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  justify-self: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.list {
+  /* border: 2px solid black; */
+   width: 31%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+gap: 5px;
+
+}
+.list li{
+    /* border: 2px solid red; */
+     width: 90%;
+     font-size: 0.9rem;
+      background: #EEE;
+      border-radius: 6px;
+        transition: background 0.3s;
+}
+.list li:hover {
+  background: #DDD;
+}
+
+.hd-head{
+    font-weight: 700;
+    color: #5E4B8B;
+    margin-bottom: 8px;
+}
+ /* DIV FOR TIME AND SOCIAL MEDIA  */
+.time-social-div{
+    /* border-top: 1px solid #DDD; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* DIV FOR TIME */
+
+.time-container {
+  /* border: 2px solid green; */
+  width: 40%;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-testid='test-user-time'] {
+  /* border: 2px solid black; */
+  font-size: 0.8rem;
+}
+
+[data-testid='test-user-time'] #span{
+    font-weight: 800;
+}
+
+/* FOR SOCIAL MEDIA  */
+.social-container {
+     /* border: 2px solid green; */
+     width: 50%;
+     height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-testid='test-user-social-links'] {
+  /* border: 2px solid blue; */
+   max-width: 90%;
+   min-width: 90%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   gap: 25px;
+   list-style: none;
+    height: 50px;
+
+  /*
+  
+  
+ 
+ 
+   */
+}
+
+.social-link {
+  /* border: 2px solid red; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.social-link ion-icon{
+    cursor: pointer;
+  color: #5E4B8B;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-link ion-icon:hover {
+  color: #8D79C3;
+  transform: scale(1.2);
+}
+
+
+@media (min-width: 700px) {
+    /* DIV FOR THE IMG AND HEADER */
+.image-name-container {
+ flex-direction: row;
+ row-gap: 0;
+ column-gap: 20px;
+
+}
+.name-container {
+    row-gap: 5px;
+}
+.user-name {
+  font-size: 1.7rem;
+  /* font-weight: 600; */
+}
+.user-job {
+  /* font-weight: 200; */
+  font-size: 1.2rem;
+}
+.image-container {
+  width: 200px;
+  height: 200px;
+}
+[data-testid='test-user-bio'] {
+    font-size: 1.1rem;
+}
+
+[data-testid='test-user-time'] {
+  font-size: 1rem;
+}
+.hobbies-dislike-container {
+    min-width: 50%;
+}
+.list{
+    width: 35%;
+}
+.list li{
+    /* border: 2px solid red; */
+    font-size: 1.1rem;
+    width: 90%;
+}
+.social-link {
+    font-size: 1.2rem;
+}
+}
+
+@media (min-width: 1100px) {
+    /* .user-name {
+  font-size: 2rem;
+
+} */
+
+[data-testid='test-user-time'] {
+  font-size: 1rem;
+}
+[data-testid='test-user-time'] span{
+  font-size: 1.2rem;
+}
+[data-testid='test-user-bio'] {
+    font-size: 1.2rem;
+}
+.list{
+    width: 30%;
+}
+.list li{
+    /* border: 2px solid red; */
+    font-size: 1.3rem;
+   
+}
+
+}

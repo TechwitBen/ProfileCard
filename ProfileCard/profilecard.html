@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="profilecard.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <!-- PROFILE CONTAINER -->
+    <article class="profileCard-container" data-testid="test-profile-card">
+      <!-- DIV FOR THE IMG AND HEADER -->
+       <div class="imageName-conatiner1">
+      <div class="  image-name-container">
+        <!-- FOR IMAGE -->
+        <figure class="imgName-div image-container">
+          <img src="user-image.jpg" class="user-image" data-testid="test-user-avatar" alt="user-image" />
+        </figure>
+
+        <!-- FOR HEADER -->
+        <header class="imgName-div name-container">
+          <h2 class="user-name" data-testid="test-user-name">Bendict Igbasi</h2>
+          <h2 class="user-job">Web developer</h2>
+        </header>
+      </div>
+</div>
+      
+
+      <!-- DIV CONATINER FOR BIO, HOBBY AND DISLIKES -->
+      <div class="bio-hb-container">
+        <!-- DIV FOR BIO -->
+        <div class="bio-container">
+          <p data-testid="test-user-bio">
+            I’m a geology student and web developer passionate about tech,
+            design, and innovation. Skilled in frontend and backend development,
+            with a strong willingness to learn and grow in the tech field.
+          </p>
+        </div>
+        <!-- DIV CONTAINER FOR HOBBY AND DISLIKE -->
+        <div class="hobbies-dislike-container">
+          <!-- UL FOR HOBBY -->
+          <ul data-testid="test-user-hobbies" class="list hobbie-list">
+            <li class="hd-head">HOBBIES</li>
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Gaming</li>
+            <li>Tech Exploration</li>
+            <li>Fitness</li>
+            <li>Learning</li>
+          </ul>
+          <!-- UL FOR DISLIKES -->
+          <ul data-testid="test-user-dislikes" class="list dislike-list">
+            <li class="hd-head">DISLIKES</li>
+            <li>Dishonesty</li>
+            <li>Negativity</li>
+            <li>Procastination</li>
+            <li>Ignorance</li>
+            <li>Disrespect</li>
+            <li>Arrogance</li>
+          </ul>
+        </div>
+      </div>
+
+     <!-- DIV FOR TIME AND SOCIAL MEDIA -->
+      <div class="time-social-div">
+       <!-- DIV FOR TIME  -->
+      <div class="time-container">
+        <p class="time" data-testid="test-user-time">
+          <span id="span">Time:</span><span id="spanTime"> 323839136176378617</span>
+        </p>
+      </div>
+       <!-- FOR SOCIAL MEDIA  -->
+      <div class="social-container">
+        <ul data-testid="test-user-social-links">
+          <li class="social-link" data-testid="test-user-social-twitter">
+             <a href="https://twitter.com/Tech_niciann" target="_blank" rel="noopener noreferrer">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+          </li>
+          <li class="social-link" data-testid="test-user-social-facebook">
+            <a href="https://www.instagram.com/nnnnnnlee714/" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+          </li>
+          <li class="social-link" data-testid="test-user-social-whatsApp">
+             <a href="https://wa.me/09012802102" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </article>
+    <script>
+
+ function updateTime() {
+      const time = document.querySelector("#spanTime")
+      const now =  Date.now();
+      time.textContent =  now;
+    }
+    setInterval(updateTime, 1000);
+
+    </script>
+  </body>
+</html>
