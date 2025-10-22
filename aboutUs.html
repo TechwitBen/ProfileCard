@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="aboutUs.css" />
+  </head>
+  <body>
+    <!-- THE MAIN ABOUTUS CONTAINER -->
+    <main data-testid="test-about-page">
+      <!-- ABOUT ME TEXT DIV -->
+      <div class="about-child-div div1">
+        <h2>ABOUT ME</h2>
+      </div>
+      <!-- SECTION CONTAINER DIV -->
+      <div class="about-child-div div2">
+        <!-- SECTION 1 -->
+        <section class="sect1">
+          <figure class="img-container">
+            <img src="user-image.jpg" alt="Profile photo of Benedict Igbasi"/>
+          </figure>
+        </section>
+        <!-- SECTION 2 -->
+        <section class="sect2">
+          <!-- NAME DIV -->
+          <div class="name-div">
+            <h2>Hi There! I'm Bendict Igbasi</h2>
+            <p>web developer</p>
+          </div>
+          <!-- BIO DIV -->
+          <div class="bio-div">
+            <p data-testid="test-about-bio">
+              Hello! My name is Ben, and I’m a passionate and curious learner
+              exploring the world of web development. My journey in tech began
+              with front-end development learning HTML, CSS, and JavaScript. I’m
+              now expanding into backend technologies to become a full-stack
+              developer.
+            </p>
+          </div>
+          <!-- OTHER LIST DIV -->
+          <ul class="other-list-div">
+            <!--1 BIRTHDAY LIST -->
+            <li class="birthday-list">
+              <ul>
+                <li>Birthday</li>
+                <li class="dot-list">:</li>
+              </ul>
+              <p>17 July</p>
+            </li>
+            <!--2 PHONENUMBER LIST  -->
+            <li class="birthday-list">
+              <ul>
+                <li>Phone</li>
+                <li class="dot-list">:</li>
+              </ul>
+              <p>09012802102</p>
+            </li>
+            <!--3 GOALS LIST  -->
+            <li class="birthday-list">
+              <ul>
+                <li>Goals</li>
+                <li class="dot-list">:</li>
+              </ul>
+              <p data-testid="test-about-goals">
+                To become better at building real-world web projects.
+              </p>
+            </li>
+            <!--4 AREAS OF LOW CONFIDENCE LIST -->
+            <li class="birthday-list">
+              <ul>
+                <li>Areas of low confidence</li>
+                <li class="dot-list">:</li>
+              </ul>
+              <p data-testid="test-about-confidence">
+                Marketing myself and sharing my work publicly.
+              </p>
+            </li>
+            <!--5 NOTE TO FUTURE SELF LIST -->
+            <li class="birthday-list">
+              <ul>
+                <li>Note to future self</li>
+                <li class="dot-list">:</li>
+              </ul>
+              <p data-testid="test-about-future-note">
+                Keep learning, stay consistent, and never give up.
+              </p>
+            </li>
+            <!--6 EXTRA THOUGHTS LIST -->
+            <li class="birthday-list">
+              <ul>
+                <li>Extra thoughts</li>
+                <li class="dot-list">:</li>
+              </ul>
+              <p data-testid="test-about-extra">
+                Every small step is progress, just keep moving forward.
+              </p>
+            </li>
+            <div class="cv-div"><a href="contact.html">
+              <button>Contact Me</button>
+            </a>
+            </div>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

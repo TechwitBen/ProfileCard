@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    /* border: 2px solid black; */
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-text-container{
+    /* border: 2px solid red; */
+    max-width: 100%;
+    /* CHANGE IT LATER */
+    height: auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.div-child{
+    /* border: 2px solid black; */
+    /* width: 50%; */
+    width: 100%;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.contact-child-div{
+     /* border: 2px solid green; */
+      max-width: 90%;
+      min-width: 90%;
+      box-shadow: 20px;
+}
+ /* CONTACT TEXT DIV */
+.text-div{
+    /* border: 2px solid green; */
+    height: 100px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-div h1{
+    font-size: 2.1rem;
+    color: rgb(22, 22, 22);
+    font-weight: 800;
+}
+#contactForm{
+height: auto;
+
+}
+
+/* FORM CONTAINER DIVS */
+
+#contactForm .divInp{
+/* border: 2px solid red; */
+max-width: 100%;
+height: 80px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+column-gap: 5px;
+}
+
+.labelName{
+    font-weight: 600;
+    color: rgb(99, 91, 91);
+}
+
+/* INPUTS STYLE */
+input{
+/* flex: 1; */
+height: 50px;
+max-width: 100%;
+/* border: 1px solid black; */
+border: none;
+border-bottom: 2px solid black;
+/* background-color: #f3f3f3 */
+}
+
+/* MESSAGE DIV */
+.message-div{
+/* min-height: 20px; */
+/* border: 2px solid red; */
+max-width: 100%;
+height: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+column-gap: 5px;
+}
+#message{
+    height: 80px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+/* BUTTON STYLE */
+.button-div{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[data-testid="test-contact-submit"]{
+    height: 40px;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #5E4B8B;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    /* border: none; */
+}
+/* TEXT DIV CONTAINER */
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5E4B8B;
+   
+}
+
+/* FLEX CONTAINER DIV */
+.flex-div-container{
+    /* border: 2px solid blue; */
+    max-width: 90%;
+    min-width: 75%;
+     height: 350px;
+     display: flex;
+     flex-direction: column;
+     /* gap: 40px; */
+     margin-top: 20px;
+      margin-bottom: 20px;
+}
+.flex-div-container ul{
+    /* border: 2px solid green; */
+    list-style: none;
+    min-width: 100%;
+    height:70px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 35px;
+
+}
+.ion-icon{
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+}
+.flex-div-container p{
+    color: white;
+    font-weight: 100;
+}
+
+.flex-div-container
+/* Lists style */
+
+/* icon-list */
+.icon-list{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid red; */
+}
+.text-list{
+    width: 100%;
+     /* border: 2px solid red; */
+     height: 40px;
+      display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+ /* SOCIAL MEDIA UL  */
+
+#social-ul{
+margin-top: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+}
+message
+#social-ul li{
+    /* border: 2px solid black; */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ion{
+    font-size: 35px;
+    color: white;
+}
+
+@media (min-width: 700px){
+    .contact-text-container{
+    max-width: 100%;
+    /* CHANGE IT LATER */
+    height: 100vh;
+    flex-direction: row;
+     gap: 0;
+}
+.div-child{
+  
+    width: 50%;
+  
+}
+/* FLEX CONTAINER DIV */
+.flex-div-container{
+     margin-top: 0;
+     margin-bottom: 0;
+}
+}

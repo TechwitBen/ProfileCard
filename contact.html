@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <!-- CONTACT CONTAINER -->
+    <main>
+      <!-- DIV CONTAINER FOR CONTACT AND TEXTS -->
+      <div class="contact-text-container">
+        <!-- CONTACT FORM CONTAINER -->
+        <div class="contact-container div-child">
+          <!-- CONTACT TEXT DIV -->
+          <div class="text-div contact-child-div">
+            <h1>Contact Us</h1>
+          </div>
+
+          <!-- FORM CONTAINER -->
+          <form id="contactForm" class="contact-child-div shadow-lg" novalidate>
+            <div class="fullname-div divInp">
+              <label for="name" class="labelName">Full Name:</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                data-testid="test-contact-name"
+                aria-describedby="test-contact-error-name"
+              />
+              <p  data-testid="test-contact-error-name" id="test-contact-error-name" class="error">
+                The Name Field is Required
+              </p>
+            </div>
+
+            <div class="email-div divInp">
+              <label for="email" class="labelName">Email:</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                data-testid="test-contact-email"
+                aria-describedby="test-contact-error-email"
+              />
+              <p data-testid="test-contact-error-email" id="test-contact-error-email" class="error">
+                The Email Field is Required
+              </p>
+            </div>
+
+            <div class="subject-div divInp">
+              <label for="subject" class="labelName">Subject:</label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                data-testid="test-contact-subject"
+                aria-describedby="test-contact-error-subject"
+              />
+              <p data-testid="test-contact-error-subject" id="test-contact-error-subject" class="error">
+                The Subject Field is Required
+              </p>
+            </div>
+
+            <div class="message-div">
+              <label for="message" class="labelName">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                data-testid="test-contact-message"
+                aria-describedby="test-contact-error-message"
+              ></textarea>
+              <p data-testid="test-contact-error-message" id="test-contact-error-message" class="error">
+                The Message Field is Required
+              </p>
+            </div>
+            <div class="button-div">
+              <button type="submit" data-testid="test-contact-submit">
+                Send Message
+              </button>
+            </div>
+          </form>
+
+          <p
+            id="successMsg"
+            data-testid="test-contact-success"
+            class="success"
+            hidden
+          >
+            ✅ Message sent successfully!
+          </p>
+        </div>
+        <!-- TEXT DIV CONTAINER -->
+        <div class="text-container div-child">
+          <!-- FLEX CONTAINER DIV-->
+          <div class="flex-div-container">
+            <!-- ADDRESS UL -->
+            <ul>
+              <li class="icon-list"><ion-icon name="location-outline" class="ion-icon"></ion-icon></li>
+              <li class="text-list"><p>No.6 Edmund Crescent Way, Lagos.</p></li>
+            </ul>
+            <!-- Email Address UL -->
+            <ul>
+              <li class="icon-list"><ion-icon name="mail-outline" class="ion-icon"></ion-icon></li>
+              <li class="text-list"><p>bendictleo34@gmail.com</p></li>
+            </ul>
+            <!-- PHONE NUMBER UL -->
+            <ul>
+              <li class="icon-list"><ion-icon name="call-outline" class="ion-icon"></ion-icon></li>
+              <li class="text-list"><p>9012802102</p></li>
+            </ul>
+            <!-- SOCIAL MEDIA UL -->
+            <ul id="social-ul">
+              <li><ion-icon name="logo-facebook" class="ion"></ion-icon></li>
+              <li><ion-icon name="logo-whatsapp" class="ion"></ion-icon></li>
+              <li><ion-icon name="logo-twitter" class="ion"></ion-icon></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
