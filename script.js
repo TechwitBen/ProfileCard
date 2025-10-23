@@ -10,12 +10,12 @@ form.addEventListener('submit', function (e) {
   let valid = true;
 
   // console.log("Submitted");
-  // const name = form.name.value.toLowerCase();
+  const name = form.name.value.toLowerCase();
   const email = form.email.value.toLowerCase();
   const subject = form.subject.value;
   const message = form.message.value;
 
-  console.log(form.name);
+  // console.log(form.name);
 
  
   
